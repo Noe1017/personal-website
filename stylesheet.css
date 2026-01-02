@@ -112,17 +112,17 @@ h2 {
 
 .pub-content {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: flex-start;
 }
 
 .pub-image {
-    width: 200px;
-    height: 120px;
-    object-fit: cover;
+    width: 300px;
+    height: auto;
+    display: block;
     border-radius: 5px;
     flex-shrink: 0;
-    background-color: #f0f0f0;
+    align-self: flex-start;
 }
 
 .pub-text {
@@ -153,6 +153,90 @@ h2 {
     font-size: 0.9em;
 }
 
+/* Work Experience */
+.work-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.work-item:last-child {
+    border-bottom: none;
+}
+
+.work-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.work-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.work-logo-placeholder {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+.work-info {
+    flex: 1;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.work-title {
+    flex: 1;
+}
+
+.position {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.company {
+    font-size: 1.05em;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.work-date {
+    font-size: 0.95em;
+    color: #666;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.work-details {
+    margin-left: 0;
+}
+
+.work-location {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.work-desc {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #333;
+}
+
 .pub-links a {
     color: #0066cc;
     text-decoration: none;
@@ -180,6 +264,12 @@ h2 {
     flex-shrink: 0;
     background-color: #f0f0f0;
     border-radius: 5px;
+}
+
+.edu-logo-placeholder {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
 }
 
 .edu-text {
