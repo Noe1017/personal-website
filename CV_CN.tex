@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{xeCJK}
+\usepackage{array}
+\usepackage{color}
+\usepackage[colorlinks=true,
+            linkcolor=linkblue,
+            urlcolor=linkblue,
+            citecolor=linkblue]{hyperref}
+
+\name{李吉祥} % Your name
+\address{\href{mailto:jixiangli1017@gmail.com}{jixiangli1017@gmail.com} \\ \href{https://github.com/Noe1017}{github.com/Noe1017} \\ \href{https://jixiangli.xyz}{jixiangli.xyz}}
+\begin{document}
+\linespread{0.95}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{教育背景}
+\textbf{中北大学} \hfill 太原，中国\\
+计算机科学与技术学士（工学） \hfill 2020年9月 - 2024年6月\\
+（刘鼎工程荣誉班，前5\%）
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORKING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{工作经历}
+
+\begin{rSubsection}{美团}{北京，中国}{\textup{大数据工程师}}{\textup{2024年2月 - 至今}}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item 负责订单与交易数据域，专注于 ETL 流程、数据仓库优化、日常数据维护，使用 Flink、Doris 和 Kafka 支持实时数据处理，为营销、运营和策略场景提供大规模数据处理能力
+\item 构建 AI 驱动的 Agent 平台，实现数据问答、SQL 指导和问题分解的自动化，减少人工支持并实现智能工作流编排
+\item 主导数据资产管理，识别并消除历史数仓中的冗余数据，确保数据标准化并提升数据资产的可复用性
+\item 优化低效的 Hadoop 和 Flink 任务，提升任务执行效率并缩短处理时间
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{旷视科技}{北京，中国}{\textup{C++开发工程师（实习）}}{\textup{2023年6月 - 2023年10月}}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item 负责图商通信与数据适配、EHP 数据校验及 PPL 模块的 C++ 开发，使用 KML 验证 SDMap 车道精度
+\item 地图格式转换：实现了 OSM、Apollo 与私有标注格式之间的转换
+\item 参与 SDMap 引擎开发并完成适配器接口封装
+\end{itemize}
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS / RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{黑客松}
+
+\begin{rSubsection}{\href{https://github.com/Noe1017/SilentDAO}{\textup{Mantle Global Hackathon 2025}}}{线上}{\href{https://github.com/Noe1017/SilentDAO}{\textup{SilentDAO}}}{\textup{2025年12月}}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item 设计并实现基于零知识证明（ZK）的匿名治理投票系统，在 Mantle L2 上实现可验证的 DAO 投票且不暴露投票者身份
+\item 实现 ZK 成员证明与 nullifier 逻辑，在保护隐私的同时确保资格校验并防止重复投票
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{\href{https://luma.com/o5rjsvpc?tk=qwiw43}{Monad Blitz}}{北京，中国}{\href{https://github.com/Noe1017/gas_morph}{\textup{gas\_morph}}}{\textup{2025年8月}}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item 设计并实现基于 ERC-4337 Paymaster 的 Gas 补贴协议，实现意图驱动和基于权限的 Gas 赞助
+\item 构建基于 NFT 的访问控制与会话管理，确保补贴策略的安全、可扩展及防滥用
+\end{itemize}
+\end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	HONORS & AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{荣誉奖项}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item \href{https://jixiangli.xyz/awards/2024-ICPC-China-National-Invitational-Contest-Jixiang-Li-MEDAL.pdf}{银奖，ACM-ICPC 中国全国邀请赛}，2023年6月
+\item \href{https://jixiangli.xyz/awards/CCCC-TPD-Ladder-Contest.pdf}{全国一等奖，CCCC —— TPD 团体程序设计天梯赛}，2023年5月
+\item \href{https://jixiangli.xyz/awards/2023-Asia-Xian-Regional-Contest-Jixiang-Li-MEDAL.pdf}{铜奖，ACM-ICPC 亚洲区域赛}，2022年11月
+\item \href{https://jixiangli.xyz/awards/Lanqiao-Cup.jpg}{全国二等奖，蓝桥杯}，2022年6月
+\end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	OTHERS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{兴趣爱好}
+热衷于参与各类 Web3 黑客松，探索 AI 编程技术。对区块链开发、去中心化应用以及利用 AI 工具进行软件开发充满热情。
+\end{rSection}
+
+\end{document}

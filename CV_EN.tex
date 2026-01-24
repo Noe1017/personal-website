@@ -1,0 +1,121 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{xeCJK}
+\usepackage{array}
+\usepackage{color}
+\usepackage[colorlinks=true,
+            linkcolor=linkblue,
+            urlcolor=linkblue,
+            citecolor=linkblue]{hyperref}
+
+\name{Jixiang Li} % Your name
+\address{\href{mailto:jixiangli1017@gmail.com}{jixiangli1017@gmail.com} \\ \href{https://github.com/Noe1017}{github.com/Noe1017} \\ \href{https://jixiangli.xyz}{jixiangli.xyz}}
+\begin{document}
+\linespread{0.95}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EDUCATION}
+\textbf{North University of China} \hfill Taiyuan, China\\
+B.Eng. in Computer Science and Technology \hfill Sep 2020 - June 2024\\
+(Liuding Honors Program of Eng., Top 5\%)
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORKING EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXPERIENCE}
+
+\begin{rSubsection}{Meituan}{Beijing, China}{\textup{Data Engineer}}{\textup{Feb 2024 - Present}}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item Managed the Order \& Transaction Data Domain, focusing on ETL processes, data warehouse optimization, daily data maintenance, and supported real-time data processing using Flink, Doris, and Kafka to enable large-scale data processing for marketing, operations, and strategy scenarios
+\item Built an AI-driven Agent platform to automate data Q\&A, SQL guidance, and problem decomposition, reducing manual support and enabling intelligent workflow orchestration
+\item Led data asset management by identifying and eliminating redundant data in historical data warehouses, ensuring data standardization and improving the reusability of data assets
+\item Optimized inefficient Hadoop and Flink tasks, enhancing task execution efficiency and reducing processing time
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{Megvii Technology}{Beijing, China}{\textup{C++ Developer (Intern)}}{\textup{Jun 2023 - Oct 2023}}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item Responsible for map provider communication and data adaptation, EHP data validation, and \textup{C++} development for PPL, with KML-based verification of SDMap lane accuracy
+\item Map format conversion: Implemented conversion between OSM, Apollo, and proprietary annotation formats
+\item Participated in SDMap engine development and completed adapter interface encapsulation
+\end{itemize}
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS / RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{HACKATHON}
+
+\begin{rSubsection}{\href{https://github.com/Noe1017/SilentDAO}{\textup{Mantle Global Hackathon 2025}}}{Online}{\href{https://github.com/Noe1017/SilentDAO}{\textup{SilentDAO}}}{\textup{Dec 2025}}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item Designed a zero-knowledge (ZK)--based anonymous governance voting system on Mantle L2, enabling verifiable DAO voting without revealing voter identities
+\item Implemented ZK membership proofs with nullifier logic to enforce eligibility and prevent double voting while preserving privacy
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{\href{https://luma.com/o5rjsvpc?tk=qwiw43}{Monad Blitz}}{Beijing, China}{\href{https://github.com/Noe1017/gas_morph}{\textup{gas\_morph}}}{\textup{Aug 2025}}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item Designed and implemented an ERC-4337 Paymaster--based gas subsidy protocol enabling intent-driven and permission-based gas sponsorship
+\item Built NFT-based access control and session management to ensure secure, extensible, and abuse-resistant subsidy strategies
+\end{itemize}
+\end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	HONORS & AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{HONORS \& AWARDS}
+\begin{itemize}
+\setlength\itemsep{-0.5em}
+\item \href{https://jixiangli.xyz/awards/2024-ICPC-China-National-Invitational-Contest-Jixiang-Li-MEDAL.pdf}{Silver Medal, ACM-ICPC China National Invitational Contest}, June 2023
+\item \href{https://jixiangli.xyz/awards/CCCC-TPD-Ladder-Contest.pdf}{National First Prize, CCCC -- TPD Ladder Contest}, May 2023
+\item \href{https://jixiangli.xyz/awards/2023-Asia-Xian-Regional-Contest-Jixiang-Li-MEDAL.pdf}{Bronze Medal, ACM-ICPC Asia Regional Contest}, November 2022
+\item \href{https://jixiangli.xyz/awards/Lanqiao-Cup.jpg}{National Second Prize, Lanqiao Cup}, June 2022
+\end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	OTHERS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{HOBBIES}
+I enjoy participating in various Web3 Hackathons and exploring AI Coding technologies. I am passionate about blockchain development, decentralized applications, and leveraging AI tools for software development.
+\end{rSection}
+
+\end{document}
