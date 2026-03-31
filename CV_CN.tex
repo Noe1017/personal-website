@@ -17,105 +17,106 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%\tPACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{xeCJK}
 \usepackage{array}
 \usepackage{color}
+\IfFileExists{fontawesome5.sty}{\usepackage{fontawesome5}}{}
 \usepackage[colorlinks=true,
             linkcolor=linkblue,
             urlcolor=linkblue,
             citecolor=linkblue]{hyperref}
 
+\newcommand{\iconPhone}{\IfFileExists{fontawesome5.sty}{\faIcon{phone}}{☎}}
+\newcommand{\iconMail}{\IfFileExists{fontawesome5.sty}{\faIcon{envelope}}{✉}}
+\newcommand{\iconGithub}{\IfFileExists{fontawesome5.sty}{\faIcon{github}}{GH}}
+\newcommand{\iconWeb}{\IfFileExists{fontawesome5.sty}{\faIcon{globe}}{🌐}}
+\newcommand{\iconBirth}{\IfFileExists{fontawesome5.sty}{\faIcon{calendar-alt}}{📅}}
+
 \name{李吉祥} % Your name
-\address{\href{mailto:jixiangli1017@gmail.com}{jixiangli1017@gmail.com} \\ \href{https://github.com/Noe1017}{github.com/Noe1017} \\ \href{https://jixiangli.xyz}{jixiangli.xyz}}
+\address{\iconBirth\ 24岁 \\ \iconPhone\ 18910727582 \\ \iconMail\ \href{mailto:jixiangli1017@gmail.com}{jixiangli1017@gmail.com} \\ \iconGithub\ \href{https://github.com/Noe1017}{Noe1017} \\ \iconWeb\ \href{https://jixiangli.xyz}{jixiangli.xyz}}
 \begin{document}
-\linespread{0.95}
+\linespread{0.98}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%\tEDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{教育背景}
 \textbf{中北大学} \hfill 太原，中国\\
-计算机科学与技术学士（工学） \hfill 2020年9月 - 2024年6月\\
-（刘鼎工程荣誉班，前5\%）
+计算机科学与技术 工学学士 \hfill 2020年9月 - 2024年6月\\
+（刘鼎工程荣誉班，专业前5\%）\\
+ACM 集训队成员，长期参与算法竞赛与程序设计训练
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	WORKING EXPERIENCE SECTION
+%\tWORKING EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{工作经历}
 
-\begin{rSubsection}{美团}{北京，中国}{\textup{大数据工程师}}{\textup{2024年2月 - 至今}}
+\begin{rSubsection}{美团（闪购）}{北京，中国}{\textup{大数据开发工程师}}{\textup{2024年2月 - 至今}}
 \begin{itemize}
-\setlength\itemsep{-0.5em}
-\item 负责订单与交易数据域，专注于 ETL 流程、数据仓库优化、日常数据维护，使用 Flink、Doris 和 Kafka 支持实时数据处理，为营销、运营和策略场景提供大规模数据处理能力
-\item 构建 AI 驱动的 Agent 平台，实现数据问答、SQL 指导和问题分解的自动化，减少人工支持并实现智能工作流编排
-\item 主导数据资产管理，识别并消除历史数仓中的冗余数据，确保数据标准化并提升数据资产的可复用性
-\item 优化低效的 Hadoop 和 Flink 任务，提升任务执行效率并缩短处理时间
+\setlength\itemsep{-0.2em}
+\item 设计并落地 MetaSentry AI（指标资产智能审核系统）：基于 Spring Boot + LLM 构建字段级实时校验与完整资产审核能力，覆盖命名/定义/依赖/冲突等核心检查项，支撑标准化资产审核流程自动化
+\item 设计并落地“小数点”智能答疑体系：清洗分析约 6000 条历史问题，结合 20+ 业务访谈与 15+ 高频 QA Wiki 建库，推动数据咨询从人工应答向智能匹配转型；问题分类人力由 1 PD 降至 0.1 PD
+\item 主导闪购数仓标准化建设：盘点订单域 83 个指标并收敛 47 个高频指标、43 个维度并收敛 27 个高频维度；从 14 个业务模型抽象 6 个通用基建模型，并通过词根/维度校验与 SQL 映射工具将 60 个指标维度录入耗时由 2--3 PD 降至 0.5 PD（约 -80\%），高频场景标准化覆盖约 80\%
+\item 建设国补核心数据链路与数据产品体系：改造融合 12 张 Fact/Aggr 基建表并建立 11 个 DQC 监控项，保障政府审计数据每日 03:00、经营数据每日 07:00 稳定交付；开发 9 个可视化组件并上线 33 个看板（日均 UV 32、累计 PV 2662）
+\item 推动国补审计自动化与治理闭环：覆盖 19 省/直辖市、74 地市审计日报自动化投递，融合 2 个通用报账模板与 74 条明细数据，报送打回率下降约 30\%，业务侧口径反馈率由 20\% 降至 8\%
+\item 推动订单域链路治理常态化：建立指标巡检与增量管控机制，持续收敛口径差异，提升跨团队数据协同效率与资产可追溯性
 \end{itemize}
 \end{rSubsection}
 
-\begin{rSubsection}{旷视科技}{北京，中国}{\textup{C++开发工程师（实习）}}{\textup{2023年6月 - 2023年10月}}
+\begin{rSubsection}{旷视科技}{北京，中国}{\textup{C++ 开发工程师（实习）}}{\textup{2023年6月 - 2023年10月}}
 \begin{itemize}
-\setlength\itemsep{-0.5em}
-\item 负责图商通信与数据适配、EHP 数据校验及 PPL 模块的 C++ 开发，使用 KML 验证 SDMap 车道精度
-\item 地图格式转换：实现了 OSM、Apollo 与私有标注格式之间的转换
-\item 参与 SDMap 引擎开发并完成适配器接口封装
-\end{itemize}
-\end{rSubsection}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS / RESEARCH EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{黑客松}
-
-\begin{rSubsection}{\href{https://github.com/Noe1017/SilentDAO}{\textup{Mantle Global Hackathon 2025}}}{线上}{\href{https://github.com/Noe1017/SilentDAO}{\textup{SilentDAO}}}{\textup{2025年12月}}
-\begin{itemize}
-\setlength\itemsep{-0.5em}
-\item 设计并实现基于零知识证明（ZK）的匿名治理投票系统，在 Mantle L2 上实现可验证的 DAO 投票且不暴露投票者身份
-\item 实现 ZK 成员证明与 nullifier 逻辑，在保护隐私的同时确保资格校验并防止重复投票
-\end{itemize}
-\end{rSubsection}
-
-\begin{rSubsection}{\href{https://luma.com/o5rjsvpc?tk=qwiw43}{Monad Blitz}}{北京，中国}{\href{https://github.com/Noe1017/gas_morph}{\textup{gas\_morph}}}{\textup{2025年8月}}
-\begin{itemize}
-\setlength\itemsep{-0.5em}
-\item 设计并实现基于 ERC-4337 Paymaster 的 Gas 补贴协议，实现意图驱动和基于权限的 Gas 赞助
-\item 构建基于 NFT 的访问控制与会话管理，确保补贴策略的安全、可扩展及防滥用
+\setlength\itemsep{-0.2em}
+\item 负责图商通信链路与地图数据适配开发，完成 EHP 数据校验与 PPL 模块 C++ 功能实现
+\item 基于 KML 构建 SDMap 车道级精度验证流程，并实现 OSM、Apollo 与内部标注格式双向转换，提升多源数据对接效率
 \end{itemize}
 \end{rSubsection}
 
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+%\tPROJECTS / RESEARCH EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{AI黑客松}
+\begin{rSubsection}{AI / Web3 Hackathon}{线上/北京}{\textup{个人项目}}{\textup{2025年}}
+\begin{itemize}
+\setlength\itemsep{-0.2em}
+\item 完成 \href{https://github.com/Noe1017/SilentDAO}{SilentDAO} 与 \href{https://github.com/Noe1017/gas_morph}{gas\_morph} 两项技术实践，聚焦隐私计算、账户抽象与权限控制机制设计，提升复杂协议系统的工程实现与方案落地能力
+\item 沉淀从需求拆解、协议设计到 PoC 落地的完整交付流程，强化跨技术栈快速学习与工程化实现能力
+\end{itemize}
+\end{rSubsection}
+\end{rSection}
+
 
 %----------------------------------------------------------------------------------------
-%	HONORS & AWARDS SECTION
+%\tHONORS & AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{荣誉奖项}
 \begin{itemize}
-\setlength\itemsep{-0.5em}
-\item \href{https://jixiangli.xyz/awards/2024-ICPC-China-National-Invitational-Contest-Jixiang-Li-MEDAL.pdf}{银奖，ACM-ICPC 中国全国邀请赛}，2023年6月
-\item \href{https://jixiangli.xyz/awards/CCCC-TPD-Ladder-Contest.pdf}{全国一等奖，CCCC —— TPD 团体程序设计天梯赛}，2023年5月
-\item \href{https://jixiangli.xyz/awards/2023-Asia-Xian-Regional-Contest-Jixiang-Li-MEDAL.pdf}{铜奖，ACM-ICPC 亚洲区域赛}，2022年11月
-\item \href{https://jixiangli.xyz/awards/Lanqiao-Cup.jpg}{全国二等奖，蓝桥杯}，2022年6月
+\setlength\itemsep{-0.2em}
+\item \href{https://jixiangli.xyz/awards/2024-ICPC-China-National-Invitational-Contest-Jixiang-Li-MEDAL.pdf}{ACM-ICPC 中国全国邀请赛 银奖}，2023年6月
+\item \href{https://jixiangli.xyz/awards/CCCC-TPD-Ladder-Contest.pdf}{CCCC 团体程序设计天梯赛 全国一等奖}，2023年5月
+\item \href{https://jixiangli.xyz/awards/2023-Asia-Xian-Regional-Contest-Jixiang-Li-MEDAL.pdf}{ACM-ICPC 亚洲区域赛 铜奖}，2022年11月
+\item \href{https://jixiangli.xyz/awards/Lanqiao-Cup.jpg}{蓝桥杯 全国二等奖}，2022年6月
 \end{itemize}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	OTHERS SECTION
+%\tOTHERS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{兴趣爱好}
-热衷于参与各类 Web3 黑客松，探索 AI 编程技术。对区块链开发、去中心化应用以及利用 AI 工具进行软件开发充满热情。
+\begin{rSection}{技能清单}
+\textbf{编程语言：}SQL、Java、Python\\
+\textbf{数据技术栈：}Flink、Kafka、Doris、Hadoop、ETL、离线/实时数仓、数据质量监控\\
+\textbf{方向与实践：}数据开发、数据建模、数据治理、分布式数据处理
 \end{rSection}
 
 \end{document}

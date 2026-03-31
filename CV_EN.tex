@@ -24,13 +24,20 @@
 \usepackage{xeCJK}
 \usepackage{array}
 \usepackage{color}
+\IfFileExists{fontawesome5.sty}{\usepackage{fontawesome5}}{}
 \usepackage[colorlinks=true,
             linkcolor=linkblue,
             urlcolor=linkblue,
             citecolor=linkblue]{hyperref}
 
+\newcommand{\iconBirth}{\IfFileExists{fontawesome5.sty}{\faIcon{calendar-alt}}{*}}
+\newcommand{\iconPhone}{\IfFileExists{fontawesome5.sty}{\faIcon{phone}}{*}}
+\newcommand{\iconMail}{\IfFileExists{fontawesome5.sty}{\faIcon{envelope}}{*}}
+\newcommand{\iconGithub}{\IfFileExists{fontawesome5.sty}{\faIcon{github}}{GH}}
+\newcommand{\iconWeb}{\IfFileExists{fontawesome5.sty}{\faIcon{globe}}{*}}
+
 \name{Jixiang Li} % Your name
-\address{\href{mailto:jixiangli1017@gmail.com}{jixiangli1017@gmail.com} \\ \href{https://github.com/Noe1017}{github.com/Noe1017} \\ \href{https://jixiangli.xyz}{jixiangli.xyz}}
+\address{\iconBirth\ Age: 24 \\ \iconPhone\ 18910727582 \\ \iconMail\ \href{mailto:jixiangli1017@gmail.com}{jixiangli1017@gmail.com} \\ \iconGithub\ \href{https://github.com/Noe1017}{Noe1017} \\ \iconWeb\ \href{https://jixiangli.xyz}{jixiangli.xyz}}
 \begin{document}
 \linespread{0.95}
 
