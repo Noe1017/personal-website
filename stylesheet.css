@@ -191,9 +191,26 @@ h2 {
     flex-shrink: 0;
 }
 
+.work-logo-wide {
+    width: 132px;
+    height: 44px;
+    margin-top: 8px;
+    border-radius: 0;
+}
+
 .work-logo-placeholder {
     width: 70px;
     height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #e6e6e6;
+    background: #f7f7f7;
+    color: #888;
+    font-size: 0.85em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     flex-shrink: 0;
 }
 
