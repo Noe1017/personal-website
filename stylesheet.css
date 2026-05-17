@@ -191,11 +191,21 @@ h2 {
     flex-shrink: 0;
 }
 
+.work-logo-frame {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+}
+
 .work-logo-wide {
-    width: 132px;
-    height: 44px;
-    margin-top: 8px;
+    width: 70px;
+    height: auto;
+    max-height: none;
     border-radius: 0;
+    flex-shrink: 0;
 }
 
 .work-logo-placeholder {
