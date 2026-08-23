@@ -120,7 +120,7 @@
 3. 建立工作历史记录区
 
 **网站当前状态：**
-- 域名：jixiangli1017.xyz
+- 域名：jixiangli.xyz
 - 托管：GitHub Pages
 - 主要文件：
   - `index.html` - 主页面（个人信息：李吉祥，美团数据工程师）
@@ -142,7 +142,7 @@
 
 ## 🔗 快速链接
 
-- [网站在线地址](https://jixiangli1017.xyz)
+- [网站在线地址](https://jixiangli.xyz)
 - [GitHub 仓库](#) (添加仓库链接)
 - [部署文档](README.md)
 
