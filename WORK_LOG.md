@@ -34,6 +34,34 @@
 
 ## 📅 工作历史
 
+### 2026-08-23 - 同步花信（Bloom Protocol）黑客松项目
+
+**工作目标：**
+- 将 Monad Blitz@北京V2 黑客松项目「花信」加入网站 News 区
+- 上传项目 Logo 资源
+
+**修改文件：**
+- `index.html` - News 区新增 Bloom Protocol · 花信 条目（含 GitHub 与线上演示链接）
+- `images/bloom-logo.svg` - 新增项目几何向日葵 Logo（复制自 bloom-protocol 仓库）
+
+**工作内容：**
+1. 从 bloom-protocol 仓库复制品牌 Logo（120x120 SVG，翡翠绿渐变 + 白色几何向日葵）
+2. 按现有 work-item 结构在 News 区顶部插入新条目，日期标注 2026.08
+3. 描述覆盖：DAO 治理链上公益、里程碑拨付、全链资金追踪、花信 NFT 加权投票、金葵荣誉 NFT、小葵 AI 助手
+
+**项目信息：**
+- 演示地址：https://bloom-protocol.vercel.app
+- 代码仓库：https://github.com/Noe1017/bloom-protocol
+- 链：Monad Testnet (Chain ID 10143)，5 个已部署合约
+
+**测试情况：**
+- 本地浏览器打开 index.html，News 区顶部显示新条目，Logo 正常加载
+
+**备注：**
+- 提交后需推送 GitHub 触发 Pages 部署生效
+
+---
+
 ### 2025-01-17 - 创建简历 LaTeX 文件并生成 PDF
 
 **工作目标：**
